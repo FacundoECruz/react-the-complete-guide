@@ -1,4 +1,4 @@
-import ReadedPagesDate from "./ExpenseDate";
+import ReadedPagesDate from "./ReadedPagesDate";
 import "./ReadedPages.css";
 
 function ReadedPages(props) {

@@ -1,16 +1,13 @@
-import './ReadedPages.css'
+import ReadedPagesDate from "./ExpenseDate";
+import "./ReadedPages.css";
 
-function ReadedPages() {
-    const readedPagesDate = new Date(2022, 2, 2).toDateString();
-    const course = 'Historia';
-    const readedPagesQty = 24;
-
+function ReadedPages(props) {
   return (
-    <div className='readed-pages-item'>
-      <div>{readedPagesDate}</div>
-      <div className='readed-pages-item__description'>
-        <h2>{course}</h2>
-        <div className='readed-pages-item__price'>{readedPagesQty}</div>
+    <div className="readed-pages-item">
+      <ReadedPagesDate date={props.date} />
+      <div className="readed-pages-item__description">
+        <h2>{props.course}</h2>
+        <div className="readed-pages-item__price">{props.amount}</div>
       </div>
     </div>
   );

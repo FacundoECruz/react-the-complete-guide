@@ -1,7 +1,7 @@
 import ReadedPages from './components/ReadedPages'; 
 
 function App() {
-  const Pages = [
+  const pages = [
     {
       id: 'e1',
       course: 'Geografia Economica',
@@ -26,25 +26,25 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      <Pages
-        course={Pages[0].course}
-        amount={Pages[0].amount}
-        date={Pages[0].date}
+      <ReadedPages
+        course={pages[0].course}
+        amount={pages[0].amount}
+        date={pages[0].date}
       />
-      <Pages
-        course={Pages[1].course}
-        amount={Pages[1].amount}
-        date={Pages[1].date}
+      <ReadedPages
+        course={pages[1].course}
+        amount={pages[1].amount}
+        date={pages[1].date}
       />
-      <Pages
-        course={Pages[2].course}
-        amount={Pages[2].amount}
-        date={Pages[2].date}
+      <ReadedPages
+        course={pages[2].course}
+        amount={pages[2].amount}
+        date={pages[2].date}
       />
-      <Pages
-        course={Pages[3].course}
-        amount={Pages[3].amount}
-        date={Pages[3].date}
+      <ReadedPages
+        course={pages[3].course}
+        amount={pages[3].amount}
+        date={pages[3].date}
       />
     </div>
   );
